@@ -13,9 +13,12 @@ import la
 from la.external.matplotlib import quotes_historical_yahoo
 
 ## local imports
-from functions.quotes_for_list import *
+from functions.quotes_for_list_adjCloseVol import *
 
 #---------------------------------------------
+
+# initialize interactive plotting
+plt.ion()
 
 ##
 ##  Import list of symbols to process.
@@ -31,8 +34,8 @@ filename = "C:\users\don\python\Naz100_symbols.txt"
 ## Make a plot showing all symbols in list
 ##
 
-firstdate = (1985,1,1)
 firstdate = (2011,1,1)
+firstdate = (1985,1,1)
 lastdate=(2012,3,30)
 adjClose, symbols, datearray = arrayFromQuotesForList(filename, firstdate, lastdate)
 
