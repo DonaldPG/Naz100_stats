@@ -1,0 +1,7 @@
+  RDS-A
+GOOG
+^IXIC
+^GSPC
+orly
+isrg
+gmcr
